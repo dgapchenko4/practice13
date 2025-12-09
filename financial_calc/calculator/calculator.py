@@ -6,7 +6,7 @@ def calculate_simple_interest(principal: float, rate: float, time: float) -> flo
         rate: Годовая процентная ставка (в процентах)
         time: Время в годах
     Возвращает сумму простого процента
-    Выбрасывает ValueError: Если какой-либо аргумент отрицательный
+    Выбрасывает ValueError, если какой-либо аргумент отрицательный
     """
     if principal < 0 or rate < 0 or time < 0:
         raise ValueError('Аргументы должны быть неотрицательными')

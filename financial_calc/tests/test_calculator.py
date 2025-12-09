@@ -18,7 +18,7 @@ def test_calculate_interest():
 
 
 def test_zero_calculate_interest():
-    """Тест граничных случаев с нулевыми значениями для простого процента."""
+    """Тест с нулевыми значениями для простого процента."""
     result1 = calculate_simple_interest(0, 7.2, 6.20)
     assert result1 == 0
     
@@ -53,7 +53,7 @@ def test_compound_interest():
 
 
 def test_zero_compound_interest():
-    """Тест граничных случаев с нулевыми значениями для сложного процента."""
+    """Тест с нулевыми значениями для сложного процента."""
     result1 = calculate_compound_interest(0, 8.8, 5.5, 7)
     assert result1 == 0
     
@@ -91,7 +91,7 @@ def test_calculate_tax():
 
 
 def test_zero_calculate_tax():
-    """Тест граничных случаев с нулевыми значениями для налога."""
+    """Тест с нулевыми значениями для налога."""
     result1 = calculate_tax(0, 8.6)
     assert result1 == 0
     
